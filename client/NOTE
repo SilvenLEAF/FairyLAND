@@ -1,0 +1,24 @@
+{
+  "homepage": "http://SilvenLEAF.github.io/REPO NAME",
+  "dependencies": {
+    "materialize-css",
+    "node-sass",
+    "react-router-dom",
+  },
+
+
+  "scripts": {
+  
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    
+  },
+
+
+  "devDependencies": {
+  
+    "gh-pages": "^3.1.0"
+  
+  }
+
+}
