@@ -18,7 +18,7 @@ import Home from './components/home/Home'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/RepoName">
       <div className="App">
         <Navbar/>
         <div id="myWrapper">

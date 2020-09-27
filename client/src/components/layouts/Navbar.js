@@ -30,7 +30,7 @@ function Navbar() {
           <li><NavLink to="/" className="sidenav-close" ><i className="fa fa-cogs"></i>Skills</NavLink></li>
           <li><NavLink to="/" className="sidenav-close" ><i className="fa fa-paint-brush"></i>Works</NavLink></li>
           <li><NavLink to="/" className="sidenav-close" ><i className="fa fa-envelope"></i>Contact Me</NavLink></li>
-          <li><NavLink to="/" className="sidenav-close" ><i className="fa fa-info"></i>About Me</NavLink></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://silvenleaf.github.io" className="sidenav-close" ><i className="fa fa-info"></i>About Me</a></li>
         </ul>
 
 
@@ -41,7 +41,7 @@ function Navbar() {
           <li><NavLink to="/" >Skills</NavLink></li>
           <li><NavLink to="/" >Works</NavLink></li>           
           <li><NavLink to="/">Contact Me</NavLink></li>           
-          <li><NavLink to="/">About Me</NavLink></li>
+          <li><a target="_blank" rel="noopener noreferrer" href="https://silvenleaf.github.io" >About Me</a></li>
         </ul>
 
 
