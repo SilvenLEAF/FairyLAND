@@ -267,3 +267,24 @@ ul.sidenav {
   background-color: $themeColor !important;
  
 }
+
+
+
+// ----------------BUTTONS
+
+
+.btn {
+  background-color: $themeColor !important;
+  &:visited {
+    background-color: $themeColor !important;
+  }
+  &:active {
+    background-color: $themeColor !important;
+  }
+  &:focus {
+    background-color: $themeColor !important;
+  }
+  &:hover {
+    background-color: darken($themeColor, 10) !important;
+  }
+}
