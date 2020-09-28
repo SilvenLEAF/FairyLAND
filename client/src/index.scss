@@ -180,6 +180,7 @@ ul.sidenav {
   position: fixed;
   bottom: 40px;
   right: 40px;
+  z-index: 1000;
 
 
   @include mQ(800px){
