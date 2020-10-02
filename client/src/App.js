@@ -3,40 +3,21 @@ import 'materialize-css/dist/css/materialize.min.css'
 
 
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 
-import Navbar from './components/layouts/Navbar'
-import Footer from './components/layouts/Footer'
-import MobileFooterNav from './components/layouts/MobileFooterNav'
-import BackToTopButton from './components/layouts/BackToTopButton'
+import RootAppStucture from './PAGES/RootAppStructure';
+import RootContext from './contexts/RootContext';
 
 
-
-import Home from './components/home/Home'
 
 
 function App() {
   return (
     <BrowserRouter basename="/RepoName">
-      <div className="App">
-        <Navbar/>
-        <div id="myWrapper">
-          <Switch>
-            <Route exact path="/" component={Home} />
-          </Switch>
-          
-        </div>
-
-        
-          <BackToTopButton/>
-          <Footer/>
-          <MobileFooterNav/>
-       
-        
-
-      
-      </div>
+      <RootContext>
+        <div className="App"><RootAppStucture/></div>
+      </RootContext>
     </BrowserRouter>
   );
 }
