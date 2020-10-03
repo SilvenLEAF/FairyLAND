@@ -1,22 +1,34 @@
 import M from 'materialize-css'
 // import './../../styles/Navbar.scss'
 
-import React, { useEffect } from 'react'
-import { NavLink, Link } from 'react-router-dom'
+
+
+import React, { useContext, useEffect } from 'react'
+
+
+
+import { AuthContext } from '../../contexts/subContexts/AuthContext';
+
+
+
+import { Link } from 'react-router-dom'
 import { SignedInMobileLinks, SignedInPCLinks } from './navLinks/SignedInLinks';
 import { SignedOutMobileLinks, SignedOutPCLinks } from './navLinks/SignedOutLinks';
 
 
 
-function Navbar() {
+
+
+
+function Navbar() {  
   useEffect(()=>{
     M.AutoInit();
   }, [])
 
-  const isLoggedIn = false
+  const { userData, setUserData } = useContext(AuthContext)
 
-  const mobileLink = isLoggedIn ? <SignedInMobileLinks/> : <SignedOutMobileLinks/>;
-  const pcLink = 5 ? <SignedInPCLinks/> : <SignedOutPCLinks/>;
+  const mobileLink = userData.user ? <SignedInMobileLinks setUserData={ setUserData } /> : <SignedOutMobileLinks/>;
+  const pcLink = userData.user ? <SignedInPCLinks setUserData={ setUserData } /> : <SignedOutPCLinks/>;
 
 
 
@@ -66,7 +78,7 @@ function Navbar() {
         <ul className="right hide-on-large-only">
           <li>
             {
-              /*userData._id */ isLoggedIn && (
+              /*userData._id */ userData.user && (
                 <Link to="/profile" className="btn-floating center pulse myProfileNavIcon">
                   ZG
                   { /*userData.userName[0] */ }

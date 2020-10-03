@@ -90,10 +90,10 @@ body{
     font-size: 270%;
     font-family: Aladin, sans-serif;
   }
-  li a {    
+  li a {
     font-size: 150%;
-        
-    
+
+
   }
 }
 nav ul li:hover {
@@ -107,8 +107,7 @@ ul.sidenav {
   li {
     background-color: $bodyBG;
     &:nth-child(1) {
-      margin-top: 50px;
-      // background-color: red;
+      margin-top: 50px;      
     }
   }
 }

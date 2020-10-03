@@ -6,9 +6,17 @@ export const AuthContext = createContext();
 
 
 
+
+
+
 function AuthContextProvider({ children }) {
 
-  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState({
+    user: 'I am logged in',
+  });
+
+
+  
 
 
   return (
