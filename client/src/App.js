@@ -14,7 +14,7 @@ import RootContext from './contexts/RootContext';
 
 function App() {
   return (
-    <BrowserRouter basename="/RepoName">
+    <BrowserRouter basename="/REGENDO">
       <RootContext>
         <div className="App"><RootAppStucture/></div>
       </RootContext>
