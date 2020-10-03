@@ -3,6 +3,8 @@ import M from 'materialize-css'
 
 import React, { useEffect } from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import { SignedInMobileLinks, SignedInPCLinks } from './navLinks/SignedInLinks';
+import { SignedOutMobileLinks, SignedOutPCLinks } from './navLinks/SignedOutLinks';
 
 
 
@@ -10,6 +12,14 @@ function Navbar() {
   useEffect(()=>{
     M.AutoInit();
   }, [])
+
+  const isLoggedIn = false
+
+  const mobileLink = isLoggedIn ? <SignedInMobileLinks/> : <SignedOutMobileLinks/>;
+  const pcLink = 5 ? <SignedInPCLinks/> : <SignedOutPCLinks/>;
+
+
+
 
 
   return (
@@ -27,23 +37,44 @@ function Navbar() {
 
 
         <ul className="sidenav" id="mobilenav">
-          <li><NavLink to="/" className="sidenav-close" ><i className="fa fa-home"></i>Home</NavLink></li>
-          <li><NavLink to="/search" className="sidenav-close" ><i className="fa fa-search"></i>Search</NavLink></li>
-          <li><NavLink to="/contact" className="sidenav-close" ><i className="fa fa-envelope"></i>Contact Me</NavLink></li>
-          <li><a target="_blank" rel="noopener noreferrer" href="https://silvenleaf.github.io" className="sidenav-close" ><i className="fa fa-info"></i>About Me</a></li>
+          { mobileLink }            
         </ul>
 
 
 
-
+        
 
         <ul className="right hide-on-med-and-down">
-          <li><NavLink to="/" >Home</NavLink></li>
-          <li><NavLink to="/search" >Search</NavLink></li>           
-          <li><NavLink to="/contact">Contact Me</NavLink></li>           
-          <li><a target="_blank" rel="noopener noreferrer" href="https://silvenleaf.github.io" >About Me</a></li>
-        </ul>
+          { pcLink }
 
+          <li style={{marginLeft: '20px'}}>
+            {
+              /*userData._id */ 5 && (
+              <Link to="/profile" className="btn-floating center pulse myProfileNavIcon">
+                ZG
+                { /*userData.userName[0]*/ }
+              </Link>
+              )
+            }
+          </li>
+        </ul>
+        
+
+
+
+
+        <ul className="right hide-on-large-only">
+          <li>
+            {
+              /*userData._id */ isLoggedIn && (
+                <Link to="/profile" className="btn-floating center pulse myProfileNavIcon">
+                  ZG
+                  { /*userData.userName[0] */ }
+                </Link>
+                )
+              }
+          </li>
+        </ul>
 
 
       </div>

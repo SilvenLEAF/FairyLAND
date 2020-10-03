@@ -75,10 +75,20 @@ body{
 
 
 .nav.nav-wrapper {
-  font-family: 'Aladin', cursive;
+  font-family: Dosis, Aladin, sans-serif;
+  font-weight: 500;
+
+  .myProfileNavIcon{
+    background-color: $bodyBG;
+    color: $themeColor;
+    font-family: Roboto, Dosis;
+    font-weight: 700;
+    font-size: 130%;
+  }
 
   .brand-logo{
     font-size: 270%;
+    font-family: Aladin, sans-serif;
   }
   li a {
     font-size: 150%;
@@ -313,3 +323,28 @@ ul.sidenav {
     background-color: darken($themeColor, 10) !important;
   }
 }
+
+
+
+
+// --------------------DATE
+.datepicker-date-display {
+  background-color: $themeColor !important;
+ }
+ 
+ .datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+  color:$themeColor !important;
+ }
+ 
+ .datepicker-table td.is-today {
+  color: $themeColor !important;
+ }
+ 
+ .datepicker-table td.is-selected {
+  background-color: $themeColor !important;
+  color: #fff;
+ }
+
+ .dropdown-content.select-dropdown li span {
+   color: $themeColor !important;
+ }
