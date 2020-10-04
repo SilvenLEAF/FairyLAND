@@ -1,55 +1,56 @@
+@import '../variables';
+
+
 .mainProfileIcon {
   margin: 70px auto 0px auto;
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 5px solid purple;
+  border: 5px solid $themeColor;
+  box-shadow: $awesomeShadow;
 }
 
 
-.myProfileContainer {
- 
-  h3{
+.myProfilePage {
+
+  .myProfileUserName {
     margin: 0;
     margin-top: 20px;
+    font-size: 200%;
+    
   }
-  h5{
+
+  
+  .myProfileTitle {
     margin: 0;
-
+    font-size: 150%;    
   }
 
-  p{    
-    text-align: justify;
-    user-select: all;
-  }
+  
+  
+  
+  
+  
+  .myProfileInfoHolder {
+    margin: 50px 0px;
+    font-size: 120%;
 
-  .myProfileBtnsHolder{
-    margin: 50px auto 70px auto;
-  }
-
-
-  .myProfileSectionTitle{
-    margin-top: 40px;
-    margin-bottom: 10px;
-  }
-  .mySkillsHolder {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    li {
-      margin: 0;
-      margin-left: 10px;
-      margin-bottom: 10px;
-      display: inline-block;
-
-      padding: 10px 20px;
-      background-color: purple;
-      border-radius: 50px;
-
-      color: #fff;
+    .myProfileInfoTitle {      
+      font-weight: 600;
     }
 
+    .myProfileInfoAnswer {      
+      margin-bottom: 10px;
+    }
+
+
   }
+  
+  p.myProfileAbout {
+    text-indent: 50px;
+    text-align: justify;
+  }
+
+
+
 }

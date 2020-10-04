@@ -45,19 +45,24 @@ function Profile() {
   // if(!userData._id) history.push('/login')
 
   return (
-    <div className="container myProfileContainer">      
+    <div className="container myProfilePage">      
       <div className="mainProfileIcon" style={{background: `url("/REGENDO/Logo.png") center/cover`}} ></div>
 
       <div className="myProfileMainHeader">
-        <h3>SilvenLEAF SilvenLEAF</h3>
-        <h5>Fullstack Developer</h5>
-        <p className="red-text"> Mt View, California, USA </p>
+        <div className="myProfileUserName">SilvenLEAF SilvenLEAF</div>
+        <div className="myProfileTitle" >Fullstack Developer</div>
+        <div className="myProfileLocation red-text"> Mt View, California, USA </div>
       </div>
 
-      <div className="myProfileInfo">
+
+
+
+
+
+      <div className="myProfileInfoHolder">
         <div>
           <div className="myProfileInfoTitle">
-            <i className="fa fa-home"></i> lives in 
+            <i className="fa fa-home"></i> Lives in 
           </div>
           <div className="myProfileInfoAnswer">
             Mt View, California, USA
@@ -69,7 +74,7 @@ function Profile() {
 
         <div>
           <div className="myProfileInfoTitle">
-            <i className="fa fa-medkit"></i> working at
+            <i className="fa fa-medkit"></i> Working at
           </div>
           <div className="myProfileInfoAnswer">
             home due to coronavirus
@@ -81,7 +86,7 @@ function Profile() {
 
         <div>
           <div className="myProfileInfoTitle">
-            <i className="fa fa-graduation-cap"></i> career status
+            <i className="fa fa-graduation-cap"></i> Career status
           </div>
           <div className="myProfileInfoAnswer">
             Fullstack Developer at SilvenLEAF ORG
@@ -95,12 +100,25 @@ function Profile() {
 
         <div>
           <div className="myProfileInfoTitle">
-            <i className="fa fa-share-alt"></i> website link
+            <i className="fa fa-share-alt"></i> Website link
           </div>
           <div className="myProfileInfoAnswer">
             <a href="#" target="silvenleaf.github.io">
               silvenleaf.github.io
             </a>
+          </div>
+        </div>
+
+
+
+
+
+        <div>
+          <div className="myProfileInfoTitle">
+            <i className="fa fa-twitter"></i> Connect on Twitter
+          </div>
+          <div className="myProfileInfoAnswer">
+            @SilvenLEAF
           </div>
         </div>
 
