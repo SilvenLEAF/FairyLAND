@@ -1,4 +1,5 @@
 import M from 'materialize-css'
+import '../../styles/AuthDoor.scss'
 import '../../styles/AuthForm.scss'
 
 
@@ -44,56 +45,6 @@ function LogInForm() {
           </button>          
         </div>
 
-
-
-        <div className="myOauthDividingOR">OR</div>
-        <hr className="myOauthDividingHR"/>
-
-        <div className="myOauthButtonsHolder">
-          <div className="myOauthBtn myOauthGoogle">
-            <i className="fa fa-google"></i> Log in with Google
-          </div>
-          
-          
-          
-          
-          <div className="myOauthBtn myOauthLinkedin">
-            <i className="fa fa-linkedin"></i> Log in with LinkedIN
-          </div>
-          
-          
-          
-          
-          <div className="myOauthBtn myOauthGithub">
-            <i className="fa fa-github"></i> Log in with Github
-          </div>
-          
-          
-          
-          <div className="myOauthBtn myOauthTwitter">
-            <i className="fa fa-twitter"></i> Log in with Twitter
-          </div>
-          
-          
-          
-          <div className="myOauthBtn myOauthInstagram">
-            <i className="fa fa-instagram"></i> Log in with Instagram
-          </div>
-
-
-                            
-          
-          
-          <div className="myOauthBtn myOauthFacebook">
-            <i className="fa fa-facebook"></i> Log in with Facebook
-          </div>
-          
-          
-          
-          
-
-
-        </div>
 
 
         <div className="myAuthFormFooter">

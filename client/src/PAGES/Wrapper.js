@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom';
+import Login from '../components/auth.js/Login';
+import Signup from '../components/auth.js/Signup';
 import LogInForm from '../components/auth.js/LogInForm';
 import SignUpForm from '../components/auth.js/SignUpForm';
 
@@ -18,8 +20,11 @@ function Wrapper() {
 
 
       <Route exact path="/" component={Home} />
-      <Route path="/login" component={LogInForm} />
-      <Route path="/signup" component={SignUpForm} />
+      
+      <Route path="/login" component={Login} />
+      <Route path="/signup" component={Signup} />
+      <Route path="/loginForm" component={LogInForm} />
+      <Route path="/signupForm" component={SignUpForm} />
 
       <Route path="/profile" component={Profile} />
 

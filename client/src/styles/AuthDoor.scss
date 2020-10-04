@@ -1,17 +1,17 @@
 @import '../variables';
 
-.myAuthForm {
-  margin: 50px auto;
-}
 
-.myAuthDoor {
-  margin: 50px auto;
 
+
+
+/* -------------------------------
+.   MY AUTH DOOR, MY AUTH FORM
+------------------------------- */
+.myAuthDoor, .myAuthForm {
   width: 300px;
   padding: 20px;
   background-color: #fff;
   box-shadow: $awesomeShadow;
-
 
 
   .myAuthAppName {
@@ -33,7 +33,34 @@
     top: -10px;
   }
 
+}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------
+.         MY AUTH DOOR
+------------------------------- */
+.myAuthDoor {
+  margin: 50px auto;
 
 
   
@@ -120,12 +147,4 @@
     
   }
 
-
-
-
-
 }
-
-
-
-
