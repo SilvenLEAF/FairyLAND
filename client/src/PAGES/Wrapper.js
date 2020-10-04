@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom';
+import LogInForm from '../components/auth.js/LogInForm';
 
 
 
@@ -15,6 +16,7 @@ function Wrapper() {
 
 
       <Route exact path="/" component={Home} />
+      <Route path="/login" component={LogInForm} />
 
 
 

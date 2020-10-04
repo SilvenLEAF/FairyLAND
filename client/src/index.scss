@@ -254,10 +254,16 @@ ul.sidenav {
 /* ------------------------------------
 .    FORM INPUT INTO PRIMARY COLOR
 ------------------------------------ */
-.input-field input[type=text]:focus + label, .input-field input[type=number]:focus + label, .input-field .materialize-textarea:focus + label {
+.input-field input + label {
+  pointer-events: none !important;
+}
+
+
+
+.input-field input[type=text]:focus + label, .input-field input[type=number]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=password]:focus + label, .input-field .materialize-textarea:focus + label {
   color: $themeColor !important;
 }
-.input-field input[type=text]:focus, .input-field input[type=number]:focus, .input-field .materialize-textarea:focus {
+.input-field input[type=text]:focus, .input-field input[type=number]:focus, .input-field input[type=email]:focus, .input-field input[type=password]:focus, .input-field .materialize-textarea:focus {
   border-bottom: 1px solid $themeColor !important;
   box-shadow: 0 1px 0 0 $themeColor !important;
 }
