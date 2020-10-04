@@ -32,18 +32,8 @@
 
 
 
-
+  
   $oauthDividinHRandORcolor: rgba($color: #000000, $alpha: 0.5);
-  .myOauthDividingHR {
-    margin: 0;
-    border-bottom: 1px solid $oauthDividinHRandORcolor;
-
-    position: relative;
-    top: -25px;
-
-  }
-
-
   .myOauthDividingOR {
     margin: 0;
     margin-bottom: 20px;
@@ -54,8 +44,75 @@
     color: $oauthDividinHRandORcolor;
   }
 
+  .myOauthDividingHR {
+    margin: 0;
+    border-bottom: 1px solid $oauthDividinHRandORcolor;
 
+    position: relative;
+    top: -25px;
+
+  }
   
-  
+
+
+
+
+
+
+  .myOauthButtonsHolder {
+    margin: 0px auto 20px auto;
+    
+    
+    .myOauthBtn {
+      margin-bottom: 10px;
+      padding: 10px;
+      padding-left: 50px;
+      
+      color: $bodyBG;
+      text-shadow: $awesomeShadow;
+      box-shadow: $awesomeShadow;
+
+      cursor: pointer;
+
+
+      i{
+        margin-right: 10px;
+        font-size: 130%;
+      }
+
+    }
+
+
+
+
+    .myOauthGoogle {
+       background-color: orangered; 
+    }
+    .myOauthLinkedin {
+      background-color:  #0e76a8 ; 
+    }
+    .myOauthGithub {
+       background-color: #211F1F; 
+    }    
+    .myOauthTwitter {
+       background-color: #00acee; 
+    }    
+    .myOauthInstagram {
+      background-color: #c32aa3; 
+    }
+    .myOauthFacebook {
+      background-color: #4267B2; 
+    }    
+    
+  }
+
+
+
+
 
 }
+
+
+
+
+// fdsasfdfaasffsdfsdfsdfasdffsadffasdfasdfafdfasdfasfasdfasdfadsdfasdfdasdfsadfasdfsdfsfadfasdffadf
